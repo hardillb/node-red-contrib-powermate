@@ -1,0 +1,19 @@
+{
+    "name"         : "node-red-contrib-powermate",
+    "version"      : "0.0.1",
+    "description"  : "A simple Node-RED node to take input from a Griffin PowerMate",
+    "dependencies": {
+	"node-powermate": "0.0.2"
+    },
+    "keywords": [ "node-red", "powermate" ],
+    "node-red": {
+        "nodes": {
+            "powermate": "powermate/powermate.js"
+        }
+    },
+    "author": {
+        "name": "Benjamin Hardill",
+        "email": "hardillb@gmail.com",
+        "url": "http://www.hardill.me.uk/wordpress/"
+    }
+}

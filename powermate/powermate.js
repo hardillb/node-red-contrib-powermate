@@ -56,6 +56,7 @@ function powerMateNode(n) {
    node.on('close', function(){
        try {
           node.log('shutting down powerMate');
+          //pm
        } catch(err) {
           node.error(err);
        }

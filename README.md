@@ -33,9 +33,4 @@ If this happens, it is likely because your user doesn't have permissions for the
 
 will assign the PowerMate device to the "input" group, which the pi user belongs to. For other OSs, change the GROUP entry to a group that your user belongs to.
 
-Known Issues
-------------
-
-Node-RED will not quit on Ctrl-C when this node is deployed you will have to kill the node process from the cmd line
-
 

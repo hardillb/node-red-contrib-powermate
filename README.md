@@ -1,6 +1,6 @@
 PowerMate
 =========
-A Node-Red node to read from the [Griffin PowerMate] (http://www.amazon.co.uk/gp/product/B003VWU2WA/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B003VWU2WA&linkCode=as2&tag=bespl-21)
+A Node-Red node to read from the [Griffin PowerMate](http://www.amazon.co.uk/gp/product/B003VWU2WA/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B003VWU2WA&linkCode=as2&tag=bespl-21)
 
 Install
 -------

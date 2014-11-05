@@ -19,7 +19,6 @@
 module.exports = function(RED) {
 
 var PowerMate = require('node-powermate');
-var pm;
 
 // The main node definition - most things happen in here
 function powerMateNode(n) {
@@ -29,16 +28,16 @@ function powerMateNode(n) {
     
     var node = this;
 
-    pm = new PowerMate();
+    this.pm = new PowerMate();
 
-    pm.on('buttonDown', function() {
+    this.pm.on('buttonDown', function() {
        var msg = {};
        msg.topic = node.topic + '/button';
        msg.payload = 'down';
        node.send(msg);
     });
 
-    pm.on('buttonUp', function() {
+    this.pm.on('buttonUp', function() {
        var msg = {};
        msg.topic = node.topic + '/button';
        msg.payload = 'up';
@@ -46,7 +45,7 @@ function powerMateNode(n) {
     });
 
 
-   pm.on('wheelTurn', function(delta) {
+   this.pm.on('wheelTurn', function(delta) {
        var msg = {};
        msg.topic = node.topic + '/wheel';
        msg.payload = delta;
@@ -56,7 +55,7 @@ function powerMateNode(n) {
    node.on('close', function(){
        try {
           node.log('shutting down powerMate');
-          //pm
+          node.pm.close();
        } catch(err) {
           node.error(err);
        }
